@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>
+			{% block title %}Bagen
+			{% endblock %}
+		</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link href="http://localhost/bagen/style/myStyle.css" rel="stylesheet">
+		<link href="http://localhost/bagen/style/footer.css" rel="stylesheet">
+		<link href="http://localhost/bagen/style/bootstrap/bootstrap.css" rel="stylesheet">
+		<link
+		href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+		{# Run `composer require symfony/webpack-encore-bundle`
+		           and uncomment the following Encore helpers to start using Symfony UX #}
+		{% block stylesheets %}
+			{#{{ encore_entry_link_tags('app') }}#}
+		{% endblock %}
+
+	</head>
+	<body>
+		<div style="text-align:center">
+			<h1 id="base" > Bienvenu sur ce test</h1>
+		</div>
+		<!-- entête -->
+		{% block top %}{% endblock %}
+		<!-- corps -->
+
+
+		<main
+			role="main">
+			<!--<div class="container">-->
+			{% block body %}{% endblock %}
+			<!-- </div>-->
+		</main>
+		<!-- javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+		<script src="http://localhost/bagen/js/jquery-3.6.0.min.js"></script>
+		<script src="http://localhost/bagen/js/typeahead.bundle.js"></script>
+
+		{% block javascripts %}
+			{#{{ encore_entry_script_tags('app') }}#}
+		{% endblock %}
+	</body>
+	
+</html>

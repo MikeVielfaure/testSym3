@@ -1,0 +1,11 @@
+.input-ok{
+    border: solid 1px green;
+}
+
+.input-false{
+    border: solid 1px red;
+}
+
+.cl-base-css{
+    color:blue !important;
+}
